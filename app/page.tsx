@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="relative">
-      <div className="fixed z-10 w-full mt-8">
+      <div className="fixed z-50 w-full mt-8">
         <div className="container mx-auto flex justify-around">
           <Navbar />
           <Button className="h-auto">Download CV</Button>
