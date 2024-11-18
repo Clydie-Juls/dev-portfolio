@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/custom/navbar";
 import HeroSection from "@/components/sections/hero-section";
+import WorkExperienceSection from "@/components/sections/work-experience-section";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -11,8 +12,12 @@ export default function Home() {
           <Button className="h-auto">Download CV</Button>
         </div>
       </div>
-      <div className="w-full min-h-screen h-screen">
+
+      <div className="w-full h-screen">
         <HeroSection/>
+      </div>
+      <div className="w-full min-h-screen h-screen ">
+        <WorkExperienceSection />
       </div>
     </div>
   );
