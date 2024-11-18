@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/custom/navbar";
+import AboutMeSection from "@/components/sections/about-me-section";
 import HeroSection from "@/components/sections/hero-section";
 import ProjectSection from "@/components/sections/project-section";
 import WorkExperienceSection from "@/components/sections/work-experience-section";
@@ -16,6 +17,9 @@ export default function Home() {
 
       <div className="w-full h-screen">
         <HeroSection/>
+      </div>
+      <div className="w-full min-h-screen">
+        <AboutMeSection />
       </div>
       <div className="w-full min-h-screen h-screen ">
         <WorkExperienceSection />
