@@ -25,7 +25,7 @@ export default function AboutMeSection() {
                     </div>
                     <div>
                         <Avatar className="w-[320px] h-[320px]">
-                            <AvatarImage src="https://github.com/shadcn.png" />
+                            <AvatarImage src="/profile-picture.jfif" />
                             <AvatarFallback>CN</AvatarFallback>
                         </Avatar>
                     </div>

@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="h-full container mx-auto flex items-center justify-center gap-16">
             <div>
                 <Avatar className="w-[320px] h-[320px]">
-                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarImage src="/profile-picture.jfif" />
                     <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
             </div>
