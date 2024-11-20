@@ -21,7 +21,7 @@ export default function GreenBubble({ anchorX = defaultAnchorX, anchorY = defaul
   }
 
   return (
-    <div className='-z-10 blur-2xl w-[380px] h-[380px] bg-[#18311f] border-8 border-white border-opacity-5 rounded-full absolute' style={styles}></div>
+    <div className=' animate-pulse -z-10 blur-2xl w-[380px] h-[380px] bg-[#18311f] border-8 border-white border-opacity-5 rounded-full absolute' style={styles}></div>
   )
 }
 
