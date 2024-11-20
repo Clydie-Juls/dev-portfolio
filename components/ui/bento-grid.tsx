@@ -29,14 +29,14 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
-  githubLink
+  srcLink
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
-  githubLink?: string;
+  srcLink?: string;
 }) => {
   return (
     <div
@@ -55,12 +55,14 @@ export const BentoGridItem = ({
           {description}
         </div>
         <div className="mt-8 flex justify-end">
-            <Button asChild >
-                <div>
-                    <ArrowRight/>
-                    <Link href={githubLink || '#'}>View Project in Github</Link>
-                </div>
-            </Button>
+            <Link target="_blank" href={srcLink || '#'}>
+                <Button asChild>
+                    <div>
+                        <ArrowRight/>
+                        View Project in Github
+                    </div>
+                </Button>
+            </Link>
         </div>
       </div>
     </div>

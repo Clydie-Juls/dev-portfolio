@@ -11,6 +11,7 @@ export function ProjectBentoGrid() {
           description={item.description}
           header={item.header}
           className={item.className}
+          srcLink={item.srcLink}
         />
       ))}
     </BentoGrid>
@@ -26,35 +27,41 @@ const items = [
     description: "A web-based full-stack even transaction manager and summarizer for the DLSU google Developers’ student using Next.js and Supabase. Being made in partial fulfillment of CSSWENG",
     header: <Skeleton />,
     className: "md:col-span-2",
+    srcLink: "https://github.com/pjagbuya/cssweng-gd-finance-web"
   },
   {
     title: "Action Recognition Sign Language", 
     description: "A camera-based action recognition sign language application written in Python. this application uses mediaPipe for hand tracking, OpenCv for image processing and recording, and LSTM model using Tensorflow for action recognition.",
     header: <Skeleton />,
     className: "md:col-span-1",
+    srcLink: "https://github.com/Clydie-Juls/action-recognition-sign-language"
   },
   {
-    title: "Family Tree Chatbot",
-    description: "nfers family tree relationships using a logic-based model and inference rules in Prolog. Made in partial fulfillment of CSINTSY.",
+    title: "Square Domination",
+    description: "Square Domination is a simple local 2-player 3-d Shooting Game made in Unity.",
     header: <Skeleton />,
     className: "md:col-span-1",
+    srcLink: "https://github.com/Clydie-Juls/square-domination"
   },
   {
     title: "Boogie Post",
     description: "A simple blog application with blog posting with image upload and viewing  made using Javascript, Express.js and EJS",
     header: <Skeleton />,
     className: "md:col-span-2",
+    srcLink: "https://github.com/Clydie-Juls/Web-Blog-Express"
   },
   {
     title: "TTT",
     description: "A forum applciation with jwt authentication and authorization using React.js and MongoDb. Made in partial fullfillment of CCAPDEV",
     header: <Skeleton />,
     className: "md:col-span-2",
+    srcLink: "https://github.com/Clydie-Juls/Apdevers-MP"
   },
   {
     title: "Sokobot",
     description: "A midtier sokobot solver in Java using GBFS, Zorbist Hashing, and lower-bound heuristic deadlock detection. Made in partial fulfillment of CSINTSY.",
     header: <Skeleton />,
     className: "md:col-span-1",
+    srcLink: "https://github.com/Clydie-Juls/sokobot"
   },
 ];
