@@ -5,6 +5,7 @@ import HeroSection from "@/components/sections/hero-section";
 import ProjectSection from "@/components/sections/project-section";
 import WorkExperienceSection from "@/components/sections/work-experience-section";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
       <div className="fixed z-50 w-full mt-8">
         <div className="container mx-auto flex justify-around">
           <Navbar />
-          <Button className="h-auto">Download CV</Button>
+          <Button className="h-auto" asChild>
+            <a href="/cv/Marindo-CV.pdf" download={true}>
+              Download CV
+            </a>
+          </Button>
         </div>
       </div>
 
