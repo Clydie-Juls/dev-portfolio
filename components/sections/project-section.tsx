@@ -22,7 +22,7 @@ export default function ProjectSection() {
                 <Button asChild >
                     <div>
                         <ArrowRight/>
-                        <Link href={'#'}>See More Projects</Link>
+                        <Link target='_blank' href={'https://github.com/Clydie-Juls'}>See More Projects</Link>
                     </div>
                 </Button>
             </div>
