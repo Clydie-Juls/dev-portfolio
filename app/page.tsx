@@ -16,16 +16,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-screen">
+      <div className="w-full h-screen" id="home">
         <HeroSection/>
       </div>
-      <div className="w-full min-h-screen">
+      <div className="w-full min-h-screen" id="about">
         <AboutMeSection />
       </div>
-      <div className="w-full min-h-screen h-screen ">
+      <div className="w-full min-h-screen h-screen " id="work-experience">
         <WorkExperienceSection />
       </div>
-      <div className="w-full min-h-screen">
+      <div className="w-full min-h-screen" id="projects">
         <ProjectSection />
       </div>
       <div className="w-full bg-black">
