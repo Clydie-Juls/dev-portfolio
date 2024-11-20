@@ -36,10 +36,10 @@ export default function AboutMeSection() {
                         <TechStackIconCloud/>
                     </div>
                     <div className="w-full flex flex-col gap-12 mt-11">
-                        <TechStackCategory title="Frontend" items={programmingLanguages} />
-                        <TechStackCategory title="Frontend" items={frontendFrameworks} />
-                        <TechStackCategory title="Frontend" items={backendFrameworks} />
-                        <TechStackCategory title="Frontend" items={gameDevelopment} />
+                        <TechStackCategory title="Programming Languages(and markup)" items={programmingLanguages} />
+                        <TechStackCategory title="Frontend Frameworks" items={frontendFrameworks} />
+                        <TechStackCategory title="Backend Frameworks" items={backendFrameworks} />
+                        <TechStackCategory title="Game Development" items={gameDevelopment} />
                     </div>
                 </div>
             </div>

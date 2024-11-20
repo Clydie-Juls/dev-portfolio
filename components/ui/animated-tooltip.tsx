@@ -9,6 +9,7 @@ import {
   useSpring,
 } from "framer-motion";
 import StackIcon from "tech-stack-icons";
+import { cn } from "@/lib/utils";
 
 export const AnimatedTooltip = ({
   items,
@@ -87,9 +88,12 @@ export const AnimatedTooltip = ({
             src={item?.image || "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
             }
             alt={item.name}
-            className="opacity-0 absolute object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white transition duration-500"
+            className={cn(
+              "absolute brightness-125 flex items-center justify-center object-cover !m-0 p-2 object-top border-2 rounded-full h-14 w-14 group-hover:scale-105 border-opacity-10 group-hover:z-30 border-white transition duration-500",
+              { "opacity-0": !item?.image }
+            )}
           />
-            <div className="w-14 h-14 flex items-center justify-center rounded-full overflow-hidden">
+            <div className="p-2 w-14 h-14 flex items-center justify-center rounded-full overflow-hidden border-2 border-white border-opacity-10">
                 <StackIcon name={item.name.toLowerCase()}/>
             </div>
           </div>

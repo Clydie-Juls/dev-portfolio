@@ -27,10 +27,6 @@ export const programmingLanguages = [
     id: 7,
     name: "Python",
   },
-  {
-    id: 8,
-    name: "C",
-  },
 ];
 
 export const frontendFrameworks = [
@@ -41,6 +37,7 @@ export const frontendFrameworks = [
   {
     id: 2,
     name: "NextJS",
+    image: "/tech-stack-logos/nextjs-icon.svg",
   },
   {
     id: 3,
@@ -49,6 +46,7 @@ export const frontendFrameworks = [
   {
     id: 4,
     name: "Remix",
+    image: "/tech-stack-logos/remix.png",
   },
   {
     id: 5,
@@ -65,13 +63,15 @@ export const backendFrameworks = [
     id: 2,
     name: "BunJS",
   },
-  // {
-  //   id: 2,
-  //   name: "Express",
-  // },
   {
     id: 3,
+    name: "Express",
+    image: "/tech-stack-logos/express.svg",
+  },
+  {
+    id: 4,
     name: "Flask",
+    image: "/tech-stack-logos/flask.webp",
   },
 ];
 
@@ -99,9 +99,10 @@ export const gameDevelopment = [
     id: 1,
     name: "CSharp",
   },
-  // {
-  //   id: 2,
-  //   name: "Unity",
-  // },
+  {
+    id: 2,
+    name: "Unity",
+    image: "/tech-stack-logos/unity.svg",
+  },
 ];
 
