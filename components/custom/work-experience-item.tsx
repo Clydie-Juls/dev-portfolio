@@ -10,12 +10,12 @@ export type workExperienceItemProps = {
 
 export default function WorkExperienceItem({ title, date, company, description, imageUrl }: workExperienceItemProps) {
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-8 w-full">
       <Avatar className="w-[48px] h-[48px] mt-2">
         <AvatarImage src={imageUrl} alt="@shadcn" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 w-full">
         <div>
           <div className="flex justify-between">
             <h3 className="text-xl font-extrabold">{title}</h3>

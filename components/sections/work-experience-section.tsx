@@ -8,24 +8,32 @@ const workExperienceItems: workExperienceItemProps[] = [
     date: "August 2024 - Present",
     company: "Peer Tutor Society",
     description:
-      "I did Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed risus mollis lectus eleifend aliquet eget nec sem. Cras pharetra varius tortor ut scelerisque.",
-    imageUrl: "https://github.com/shadcn.png", // Replace with the actual image URL
+      "Scrum master and a developer working on revamping the PTS website.",
+    imageUrl: "/pts-logo.jfif",
+  },
+  {
+    title: "DLSU Harvard MUN Web Development Staff",
+    date: "July 2024 - Present",
+    company: "Peer Tutor Society",
+    description:
+      "One of the staffs who created the MUN website, particularly the events page.",
+    imageUrl: "/h-mun-logo.jpg",
   },
   {
     title: "PTS Tutor",
     date: "May 2024 - Present",
     company: "Peer Tutor Society",
     description:
-      "I did Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed risus mollis lectus eleifend aliquet eget nec sem. Cras pharetra varius tortor ut scelerisque.",
-    imageUrl: "https://github.com/shadcn.png", // Replace with the actual image URL
+      "Providing Tutoring service in computer-related subjects and programming",
+    imageUrl: "/pts-logo.jfif",
   },
   {
     title: "Freelancer",
     date: "2024 - Present",
     company: "Self-employed",
     description:
-      "I did Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed risus mollis lectus eleifend aliquet eget nec sem. Cras pharetra varius tortor ut scelerisque.",
-    imageUrl: "https://github.com/shadcn.png", // Replace with the actual image URL
+      "Independent Freelancer focusing on web development and a bit of machine learning development.",
+    imageUrl: "/freelancer-logo.png",
   },
 ];
 
