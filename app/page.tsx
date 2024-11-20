@@ -5,7 +5,6 @@ import HeroSection from "@/components/sections/hero-section";
 import ProjectSection from "@/components/sections/project-section";
 import WorkExperienceSection from "@/components/sections/work-experience-section";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function Home() {
   return (
