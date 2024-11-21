@@ -14,7 +14,7 @@ export default function Home() {
           <Navbar />
           <Button className="h-auto" asChild>
             <a href="/cv/Marindo-resume.pdf" download={true}>
-              Download CV
+              Download Resume
             </a>
           </Button>
         </div>
