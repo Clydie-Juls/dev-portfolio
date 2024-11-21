@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container mx-auto flex justify-around">
           <Navbar />
           <Button className="h-auto" asChild>
-            <a href="/cv/Marindo-CV.pdf" download={true}>
+            <a href="/cv/Marindo-resume.pdf" download={true}>
               Download CV
             </a>
           </Button>
