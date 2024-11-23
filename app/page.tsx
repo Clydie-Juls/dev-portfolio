@@ -3,6 +3,7 @@ import { Navbar } from "@/components/custom/navbar";
 import AboutMeSection from "@/components/sections/about-me-section";
 import HeroSection from "@/components/sections/hero-section";
 import ProjectSection from "@/components/sections/project-section";
+import Reflection from "@/components/sections/relfection";
 import WorkExperienceSection from "@/components/sections/work-experience-section";
 import { Button } from "@/components/ui/button";
 
@@ -31,6 +32,9 @@ export default function Home() {
       </div>
       <div className="w-full min-h-screen" id="projects">
         <ProjectSection />
+      </div>
+      <div className="w-full bg-black">
+        <Reflection/>
       </div>
       <div className="w-full bg-black">
         <Footer />
