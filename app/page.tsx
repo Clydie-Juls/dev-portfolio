@@ -34,9 +34,6 @@ export default function Home() {
         <ProjectSection />
       </div>
       <div className="w-full bg-black">
-        <Reflection/>
-      </div>
-      <div className="w-full bg-black">
         <Footer />
       </div>
     </div>
