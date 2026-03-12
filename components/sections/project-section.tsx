@@ -13,7 +13,7 @@ export default function ProjectSection() {
         <GreenBubble posX={-140} posY={-20} anchorY='bottom'/>
         <div className='absolute w-full h-full bg-gradient-to-b from-black to-10% to-transparent'></div>
         <div className='absolute w-full h-full bg-gradient-to-b from-transparent from-90% to-black'></div>
-        <div className='relative w-full flex flex-col items-center justify-center py-28 px-60 container mx-auto'>
+        <div className='relative container mx-auto flex w-full max-w-[92rem] flex-col items-center justify-center px-4 py-16 sm:px-8 lg:px-16 lg:py-28 xl:px-24'>
             <div className='w-full mb-16 mt-8'>
                 <h1 className='text-4xl font-extrabold'>Projects</h1>
             </div>

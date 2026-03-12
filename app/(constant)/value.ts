@@ -57,19 +57,23 @@ export const frontendFrameworks = [
 export const backendFrameworks = [
   {
     id: 1,
-    name: "NodeJS",
+    name: "Go",
   },
   {
     id: 2,
-    name: "BunJS",
+    name: "NodeJS",
   },
   {
     id: 3,
+    name: "RabbitMQ",
+  },
+  {
+    id: 4,
     name: "Express",
     image: "/tech-stack-logos/express.svg",
   },
   {
-    id: 4,
+    id: 5,
     name: "Flask",
     image: "/tech-stack-logos/flask.webp",
   },
@@ -94,15 +98,21 @@ export const databases = [
   },
 ];
 
-export const gameDevelopment = [
+export const infrastructureTools = [
   {
     id: 1,
-    name: "CSharp",
+    name: "Docker",
   },
   {
     id: 2,
-    name: "Unity",
-    image: "/tech-stack-logos/unity.svg",
+    name: "Kubernetes",
+  },
+  {
+    id: 3,
+    name: "Terraform",
+  },
+  {
+    id: 4,
+    name: "AWS",
   },
 ];
-

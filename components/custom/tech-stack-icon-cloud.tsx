@@ -22,12 +22,15 @@ const slugs = [
   "visualstudiocode",
   "figma",
   "go",
+  "rabbitmq",
+  "docker",
+  "kubernetes",
+  "terraform",
   "c",
   "python",
   "bunjs",
   "flask",
   "mysql",
-  "unity",
   "remixdotjs",
 ];
 
