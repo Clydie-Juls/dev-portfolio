@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clyde Marindo Portfolio
 
-## Getting Started
+Personal portfolio website for Clyde Marindo, built with Next.js, React, TypeScript, and Tailwind CSS. The site presents a backend and infrastructure-focused software engineering profile, including an About section, tech stack, work experience, featured projects, and resume download.
 
-First, run the development server:
+## Portfolio Summary
+
+This portfolio is a single-page website designed to showcase:
+
+- Professional summary and current location
+- Core backend, infrastructure, and cloud technologies
+- Work experience highlights
+- Featured software projects
+- Resume and external profile links
+
+The site keeps a dark visual style with lightweight animated UI components for the hero, tech stack, and section backgrounds.
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Radix UI
+
+## Project Structure
+
+```text
+app/                    Next.js App Router entrypoints and global styles
+components/             Section components, custom UI, and reusable primitives
+lib/                    Shared utility helpers
+public/                 Static assets such as images and resume PDF
+```
+
+## Prerequisites
+
+Before running the project locally, make sure you have:
+
+- Node.js 18 or newer
+- npm 9 or newer
+
+You can verify your versions with:
+
+```bash
+node -v
+npm -v
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Move into the project directory:
+
+```bash
+cd dev-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Run Locally
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the app in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The page will automatically reload as you make changes.
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+Run the local development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a production build:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the production server after building:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run start
+```
+
+Run linting:
+
+```bash
+npm run lint
+```
+
+## Where To Update Content
+
+If you want to customize the portfolio further, these are the main files:
+
+- `app/page.tsx` for overall page composition
+- `components/sections/` for content sections
+- `components/custom/project-bento-grid.tsx` for featured projects
+- `components/sections/work-experience-section.tsx` for work experience
+- `components/sections/about-me-section.tsx` for About content
+- `app/(constant)/value.ts` for tech stack category data
+
+## Notes
+
+- Static assets are stored in `public/`
+- The resume download links to `public/cv/Marindo-resume.pdf`
+- The site uses local Geist fonts loaded through Next.js

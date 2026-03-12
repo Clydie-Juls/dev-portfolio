@@ -14,7 +14,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "mx-auto grid max-w-[86rem] grid-cols-1 gap-8 md:auto-rows-[19rem] md:grid-cols-5 xl:max-w-[90rem]",
         className
       )}
     >
@@ -26,6 +26,7 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   title,
+  tech,
   description,
   header,
   icon,
@@ -33,6 +34,7 @@ export const BentoGridItem = ({
 }: {
   className?: string;
   title?: string | React.ReactNode;
+  tech?: string;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
@@ -41,28 +43,33 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 flex min-w-0 flex-col justify-between rounded-xl border border-transparent bg-white p-6 shadow-input transition duration-200 group/bento hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none md:p-8",
         className
       )}
     >
       {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
+      <div className="flex min-w-0 flex-1 flex-col group-hover/bento:translate-x-2 transition duration-200">
         {icon}
-        <div className="text-xl font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+        <div className="mb-3 mt-3 text-2xl font-sans font-extrabold tracking-tight text-neutral-800 dark:text-white md:text-[1.7rem]">
           {title}
         </div>
-        <div className="text-sm font-sans font-normal text-neutral-600 dark:text-neutral-300">
+        {tech ? (
+          <div className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-green-400/90">
+            {tech}
+          </div>
+        ) : null}
+        <div className="max-w-[56ch] break-words text-[13.5px] font-sans font-normal leading-7 text-neutral-700 dark:text-neutral-200/90 md:text-sm md:leading-7">
           {description}
         </div>
-        <div className="mt-8 flex justify-end">
-            <Link target="_blank" href={srcLink || '#'}>
-                <Button asChild>
-                    <div>
-                        <ArrowRight/>
-                        View Project in Github
-                    </div>
-                </Button>
-            </Link>
+        <div className="mt-10 flex justify-end">
+          <Link target="_blank" href={srcLink || '#'}>
+            <Button asChild>
+              <div>
+                <ArrowRight />
+                View Project in Github
+              </div>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
